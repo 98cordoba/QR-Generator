@@ -9,6 +9,7 @@ body {
 }
 
 form {
+    margin: auto;
     height: 30rem;
     width: 20rem;
     background-color: white;

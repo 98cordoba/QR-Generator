@@ -9,3 +9,14 @@ function generateQRCode() {
         alert("Please enter a valid URL");
     }
 }
+function generateOTP(limit) {
+    let digits = '0123456789';
+    let otp = '';
+    for (let i = 0; i < limit; i++) {
+        otp += digits[Math.floor(Math.random() * 10)];
+    }
+    let otpCodeContainer = document.getElementById("otpcode");
+    otpCodeContainer.innerHTML += "Su clave temporal es: <br>" + otp + "<br>";
+    document.getElementById("otp-container").style.display = "block";
+    document.getElementById("otp-container").style.textAlign = "center";
+}
